@@ -51347,19 +51347,7 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return _react.default.createElement("div", null, _react.default.createElement(_Pet.default, {
-        name: "luna",
-        animal: "Dog",
-        breed: "dfsd"
-      }), _react.default.createElement(_Pet.default, {
-        name: "luna",
-        animal: "Dog",
-        breed: "dfsd"
-      }), _react.default.createElement(_Pet.default, {
-        name: "buna",
-        animal: "Pig",
-        breed: "ddasd"
-      }));
+      return _react.default.createElement("pre", null, _react.default.createElement("code", null, JSON.stringify(this.state.pets, null, 4)));
     }
   }]);
 

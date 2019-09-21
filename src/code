@@ -11,3 +11,6 @@ npm install -D parcel-bundler Parcel is a easyily configurable parser
 
 npm install -D babel-eslint eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react
   
+
+  npm install -D babel-eslint babel-core babel-preset-env babel-plugin-transform-class-properties babel-preset-react
+  
