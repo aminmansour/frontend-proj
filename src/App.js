@@ -22,7 +22,7 @@ class App extends React.Component {
       breeds: [],
       handleAnimalChange: this.handleAnimalChange,
       handleBreedChange: this.handleBreedChange,
-      handleLocationChange: this.handleAnimalChange,
+      handleLocationChange: this.handleLocationChange,
       getBreeds: this.getBreeds
     };
   }
@@ -77,14 +77,21 @@ class App extends React.Component {
   }
 
   render() {
+    console.log(this.divTag);
     return (
-      <div>
+      <div ref={ref => (this.divTag = ref)}>
         <header>
           <Link to="/">Adopt me!</Link>
+          <Link to="/search-params">
+            <span aria-label="search" role="img">
+              😀
+            </span>
+          </Link>
         </header>
         <Provider value={this.state}>
           <Router>
             <SearchParams path="/search-params" />
+            {console.log("hi")}
             <Results path="/" />
             <Details path="/details/:id" />
           </Router>
